@@ -215,3 +215,13 @@ pip-log.txt
 .mr.developer.cfg
 piccolo/tms320_spectrum/DebugProteus/DSP2802x_CodeStartBranch.asm
 piccolo/tms320_spectrum/DebugProteus/DSP2802x_GlobalVariableDefs.c
+piccolo/tms320_spectrum/DebugProteus/DSP2802x_PieCtrl.c
+piccolo/tms320_spectrum/DebugProteus/adc.c
+piccolo/tms320_spectrum/DebugProteus/clock.c
+piccolo/tms320_spectrum/DebugProteus/main.c
+piccolo/tms320_spectrum/DebugProteus/pie.c
+piccolo/tms320_spectrum/DebugProteus/pie_isr.c
+piccolo/tms320_spectrum/DebugProteus/timer.c
+piccolo/tms320_spectrum/DebugProteus/tms320_spectrum.cof
+piccolo/tms320_spectrum/DebugProteus/tms320_spectrum.cof.asm
+piccolo/tms320_spectrum/DebugProteus/wdg.c

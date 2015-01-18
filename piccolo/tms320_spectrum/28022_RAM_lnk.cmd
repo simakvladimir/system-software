@@ -85,7 +85,7 @@ PAGE 0 :
 
    BEGIN      : origin = 0x000000, length = 0x000002
    RAMM0      : origin = 0x000050, length = 0x0003B0
-   PRAML0     : origin = 0x008000, length = 0x000900
+   PRAML0     : origin = 0x008000, length = 0x001000
    RESET      : origin = 0x3FFFC0, length = 0x000002
 
    IQTABLES   : origin = 0x3FE000, length = 0x000B50     /* IQ Math Tables in Boot ROM */
@@ -100,7 +100,7 @@ PAGE 1 :
    /* For this example, L0 is split between PAGE 0 and PAGE 1 */
    BOOT_RSVD   : origin = 0x000002, length = 0x00004E     /* Part of M0, BOOT rom will use this for stack */
    RAMM1       : origin = 0x000400, length = 0x000400     /* on-chip RAM block M1 */
-   DRAML0      : origin = 0x008900, length = 0x000700
+//   DRAML0      : origin = 0x008900, length = 0x000700
 }
 
 
@@ -121,6 +121,8 @@ SECTIONS
    .ebss            : > DRAML0,    PAGE = 1
    .econst          : > DRAML0,    PAGE = 1
    .esysmem         : > RAMM1,     PAGE = 1
+
+   DisplayRAM: > RAMM1,     PAGE = 1
 
    IQmath           : > PRAML0,    PAGE = 0
    IQmathTables     : > IQTABLES,  PAGE = 0, TYPE = NOLOAD
